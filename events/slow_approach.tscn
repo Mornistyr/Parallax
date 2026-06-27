@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dnqvh87iv0w7r" path="res://events/slow_approach.gd" id="1_0dkwp"]
 [ext_resource type="PackedScene" uid="uid://csh7gp1sd0wf7" path="res://First3DAsset.fbx" id="2_wqy60"]
+[ext_resource type="PackedScene" uid="uid://bib2cphrbtj7f" path="res://components/hurtbox_component.tscn" id="3_wqy60"]
 
 [node name="SlowApproach" type="Node3D" unique_id=1332809853 groups=["events"]]
 script = ExtResource("1_0dkwp")
@@ -16,3 +17,5 @@ transform = Transform3D(0.5243962, 0, 0, 0, 0.57656235, 0, 0, 0, 0.56318474, 0, 
 [node name="MovementIntervalTimer" type="Timer" parent="." unique_id=1364220618]
 wait_time = 0.5
 autostart = true
+
+[node name="HurtboxComponent" parent="." unique_id=657983360 instance=ExtResource("3_wqy60")]
