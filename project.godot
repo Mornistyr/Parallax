@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Parallax"
 run/main_scene="uid://is4fp42oe8ul"
-config/features=PackedStringArray("4.7", "Mobile")
+config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
