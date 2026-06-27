@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"84be82fe7543f42a","type":"group","x":-380,"y":-220,"width":400,"height":790,"label":"Event"},
+		{"id":"62572f39265717b4","type":"group","x":40,"y":-220,"width":400,"height":560,"label":"Event Manager"},
+		{"id":"6cc19e7947d74231","type":"group","x":560,"y":340,"width":400,"height":460,"label":"GameState"},
+		{"id":"c4b6353c9fcb7b8c","type":"text","text":"const event_type: EventType","x":-360,"y":-200,"width":360,"height":60,"color":"1"},
+		{"id":"f19bfc965f34bbc3","type":"text","text":"_enter()\n\tCalled EM whenever the event is entered_","x":-360,"y":-40,"width":360,"height":60,"color":"4"},
+		{"id":"a117d8f6d0648c0b","type":"text","text":"start_event()\n\tSpawns child event and calls enter()","x":60,"y":-40,"width":360,"height":60,"color":"4"},
+		{"id":"eddd284a23cb7f73","type":"text","text":"stop_event()\n\tCalls exit() and expects child to dequeue","x":60,"y":40,"width":360,"height":80,"color":"4"},
+		{"id":"f29e23617aff6910","type":"text","text":"var game_state: GameState","x":60,"y":-200,"width":360,"height":60,"color":"1"},
+		{"id":"3d8afe02be30cede","type":"text","text":"enum class EventType {}","x":60,"y":-120,"width":360,"height":60,"color":"5"},
+		{"id":"4735e00321c929d7","type":"text","text":"exit()\n\tCalled by EM whenever the event is exited","x":-360,"y":40,"width":360,"height":60,"color":"4"},
+		{"id":"f5c6dbcb13124b8c","type":"text","text":"var difficulty_level: int\n\tLevel of difficulty the user is at, increments based on time or cleared events. Used to affect event spawn probability","x":580,"y":440,"width":360,"height":130,"color":"1"},
+		{"id":"db77a68b7da707df","type":"text","text":"var current_events: Event[]","x":580,"y":360,"width":360,"height":50,"color":"1"},
+		{"id":"17cc8cf5d145ca0e","type":"text","text":"self_exit()\n\tNotifies EM of Event completing and cleans itself up","x":-360,"y":120,"width":360,"height":80,"color":"4"},
+		{"id":"d0c6ba3925f74ea2","type":"text","text":"static requirements_met()\n\tDetermines if the event can be spawned by the EM.","x":-360,"y":440,"width":360,"height":100,"color":"3"}
+	],
+	"edges":[
+		{"id":"4621680e981e62b1","fromNode":"3d8afe02be30cede","fromSide":"left","toNode":"c4b6353c9fcb7b8c","toSide":"right"},
+		{"id":"2afcfc0721e77da7","fromNode":"a117d8f6d0648c0b","fromSide":"left","toNode":"f19bfc965f34bbc3","toSide":"right"},
+		{"id":"cce477b678e67a69","fromNode":"eddd284a23cb7f73","fromSide":"left","toNode":"4735e00321c929d7","toSide":"right"},
+		{"id":"d4ad02a281dc82c8","fromNode":"6cc19e7947d74231","fromSide":"top","toNode":"f29e23617aff6910","toSide":"right"}
+	]
+}
