@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dc5bguuu07x48"]
+
+[ext_resource type="Script" uid="uid://dnqvh87iv0w7r" path="res://events/slow_approach.gd" id="1_0dkwp"]
+[ext_resource type="PackedScene" uid="uid://csh7gp1sd0wf7" path="res://First3DAsset.fbx" id="2_wqy60"]
+
+[node name="SlowApproach" type="Node3D" unique_id=1332809853 groups=["events"]]
+script = ExtResource("1_0dkwp")
+speed = 0.1
+
+[node name="First3DAsset" parent="." unique_id=1104715612 instance=ExtResource("2_wqy60")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04927349, 0.03944826, -0.01556778)
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." unique_id=807271760]
+transform = Transform3D(0.5243962, 0, 0, 0, 0.57656235, 0, 0, 0, 0.56318474, 0, 1, 0)
+
+[node name="MovementIntervalTimer" type="Timer" parent="." unique_id=1364220618]
+wait_time = 0.5
+autostart = true

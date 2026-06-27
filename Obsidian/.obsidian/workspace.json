@@ -11,17 +11,14 @@
             "id": "05af3d2be520326a",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Models/Event & Event Manager.canvas",
-                "viewState": {
-                  "x": 330.2962578667534,
-                  "y": 274.2592976888021,
-                  "zoom": -0.9175378398080271
-                }
+                "file": "Notes/TODO.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Event & Event Manager"
+              "icon": "lucide-file",
+              "title": "TODO"
             }
           }
         ]
@@ -189,8 +186,9 @@
   },
   "active": "05af3d2be520326a",
   "lastOpenFiles": [
-    "Notes/TODO.md",
     "Models/Event & Event Manager.canvas",
+    "Models",
+    "Notes/TODO.md",
     "Notes/EVENT.md",
     "Notes/Game Loop.md",
     "Notes/Event Manager.md",
@@ -198,7 +196,6 @@
     "Notes/Main Scene.md",
     "Excalidraw/RoughDraft.md",
     "Rough Overall Planning.canvas",
-    "Models",
     "Untitled 1.base",
     "Untitled.base"
   ]
