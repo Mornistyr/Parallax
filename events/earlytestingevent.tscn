@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://cwq6co4u2wg46"]
 
-[node name="Node3D" type="Node3D" unique_id=1332809853]
+[ext_resource type="PackedScene" uid="uid://csh7gp1sd0wf7" path="res://First3DAsset.fbx" id="1_kub4t"]
+
+[node name="EventRoot" type="Node3D" unique_id=1332809853 groups=["events"]]
+
+[node name="First3DAsset" parent="." unique_id=1104715612 instance=ExtResource("1_kub4t")]

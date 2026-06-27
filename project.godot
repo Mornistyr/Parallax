@@ -10,9 +10,19 @@ config_version=5
 
 [application]
 
-config/name="Horror Game"
+config/name="Parallax"
+run/main_scene="uid://b28uuj3hkij0d"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
+[global_group]
+
+events=""
 
 [physics]
 
