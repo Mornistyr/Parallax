@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b28uuj3hkij0d"]
 
 [ext_resource type="PackedScene" uid="uid://dw4kyom1tsl0u" path="res://floor/floor.tscn" id="1_6xmxd"]
-[ext_resource type="PackedScene" uid="uid://dc5bguuu07x48" path="res://events/slow_approach.tscn" id="4_h5o24"]
 [ext_resource type="PackedScene" uid="uid://r0bsg8301ql3" path="res://player/player.tscn" id="2_tcf2h"]
+[ext_resource type="PackedScene" uid="uid://dc5bguuu07x48" path="res://events/slow_approach.tscn" id="4_h5o24"]
 
 [node name="World" type="Node3D" unique_id=1926259917]
 
@@ -14,6 +14,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9877703, 0)
 
 [node name="SlowApproach" parent="." unique_id=1332809853 instance=ExtResource("4_h5o24")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8706903, 0.23728228, -8.114287)
+speed = 1.0
 
 [node name="Player" parent="." unique_id=605215719 instance=ExtResource("2_tcf2h")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.5339394, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.76515436, 0)

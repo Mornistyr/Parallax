@@ -12,17 +12,16 @@ config_version=5
 
 config/name="Parallax"
 run/main_scene="uid://is4fp42oe8ul"
-config/features=PackedStringArray("4.6", "Mobile")
+config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 LookEvents="*uid://p0ltrhfbe6ro"
+GameEvents="*uid://cbegh8llenhcs"
 
 [display]
 
-window/size/viewport_width=1080
-window/size/viewport_height=2400
 window/size/resizable=false
 window/stretch/mode="canvas_items"
 window/handheld/orientation=1
