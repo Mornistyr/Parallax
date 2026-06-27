@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://is4fp42oe8ul"]
+
+[ext_resource type="Script" uid="uid://cmm637whlybug" path="res://ui/title_screen_panel.gd" id="1_t7e0r"]
+[ext_resource type="PackedScene" uid="uid://b28uuj3hkij0d" path="res://world/world.tscn" id="2_0dkrt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gl0q7"]
+font_size = 200
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jhoyl"]
+font_size = 128
+
+[sub_resource type="LabelSettings" id="LabelSettings_7urb2"]
+font_size = 128
+
+[node name="Control" type="Control" unique_id=119078016]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="." unique_id=1464480761]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 175.0
+grow_horizontal = 2
+text = "PARALLAX"
+label_settings = SubResource("LabelSettings_gl0q7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleScreenPanel" type="Panel" parent="." unique_id=1268150706]
+custom_minimum_size = Vector2(400, 800)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t7e0r")
+main_scene = ExtResource("2_0dkrt")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TitleScreenPanel" unique_id=1317290432]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="StartButton" type="Button" parent="TitleScreenPanel/VBoxContainer" unique_id=357586401]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="TitleScreenPanel/VBoxContainer/StartButton" unique_id=139586351]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "START"
+label_settings = SubResource("LabelSettings_jhoyl")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuitButton" type="Button" parent="TitleScreenPanel/VBoxContainer" unique_id=1052062927]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="TitleScreenPanel/VBoxContainer/QuitButton" unique_id=1691358475]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "QUIT"
+label_settings = SubResource("LabelSettings_7urb2")
+horizontal_alignment = 1
+vertical_alignment = 1
