@@ -13,4 +13,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9877703, 0)
 [node name="CameraPivot" parent="." unique_id=1186864572 instance=ExtResource("2_tcf2h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.1475325, 0)
 
+[node name="Camera3D" parent="CameraPivot" index="0" unique_id=697627266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.100845814, -2.0408506, -0.21411383)
+
 [editable path="CameraPivot"]
