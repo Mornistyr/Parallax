@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bib2cphrbtj7f"]
+
+[ext_resource type="Script" uid="uid://d25cjaj1ieca" path="res://components/hurtbox_component.gd" id="1_prfln"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_prfln"]
+size = Vector3(2, 2, 2)
+
+[node name="HurtboxComponent" type="Area3D" unique_id=657983360]
+script = ExtResource("1_prfln")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1098908737]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3617152, 0)
+shape = SubResource("BoxShape3D_prfln")
