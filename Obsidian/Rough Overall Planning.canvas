@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"7dc14dca709c64a3","type":"group","x":-2720,"y":-2280,"width":1920,"height":1400,"label":"Scene Hierachy"},
+		{"id":"9dde092d456d51b7","type":"file","file":"Notes/Main Scene.md","x":-1720,"y":-2240,"width":360,"height":359},
+		{"id":"9bb892f2f0a23435","type":"file","file":"Notes/TODO.md","x":-680,"y":-2261,"width":280,"height":501,"color":"1"},
+		{"id":"f99849748a51252c","type":"file","file":"Notes/Game Loop.md","x":-1720,"y":-2780,"width":1120,"height":400,"color":"4"},
+		{"id":"2667e8e02a53fcee","type":"file","file":"Excalidraw/RoughDraft.md","x":-2280,"y":-2860,"width":540,"height":540},
+		{"id":"acc3258936c07aee","type":"file","file":"Notes/EVENT.md","x":-1640,"y":-1714,"width":400,"height":781},
+		{"id":"6d61f131b93e2c5f","type":"file","file":"Notes/Event Manager.md","x":-1240,"y":-1760,"width":400,"height":400},
+		{"id":"607e0e2dc92d3dbb","type":"file","file":"Notes/PLAYER.md","x":-2080,"y":-1727,"width":400,"height":167},
+		{"id":"fdaa084669627de0","x":-2530,"y":-1764,"width":250,"height":121,"type":"text","text":"# UI\nTimer for how long player has lasted"}
+	],
+	"edges":[
+		{"id":"3c239d006e091f3c","fromNode":"9dde092d456d51b7","fromSide":"bottom","toNode":"607e0e2dc92d3dbb","toSide":"top"},
+		{"id":"a706b98d94381c87","fromNode":"9dde092d456d51b7","fromSide":"bottom","toNode":"acc3258936c07aee","toSide":"top"},
+		{"id":"ea95618e3baae281","fromNode":"9dde092d456d51b7","fromSide":"bottom","toNode":"6d61f131b93e2c5f","toSide":"top"},
+		{"id":"6aa8479195ab89f0","fromNode":"9dde092d456d51b7","fromSide":"bottom","toNode":"fdaa084669627de0","toSide":"top"}
+	]
+}

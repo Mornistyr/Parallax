@@ -1,0 +1,6 @@
+- Fast paced looking around with the camera to stop scary events using phones gyroscope
+- Events are "Paused" while looked at until deleted and dealt with
+- Possible timed/placeable light sources that deal with events in areas to help progress
+- Possible hide button for "special" events that cant be stopped by looking at
+- Last as long as possible
+- If event gets triggered, player dies and resets

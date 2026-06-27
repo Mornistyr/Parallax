@@ -1,0 +1,4 @@
+- Pitch black environment, with or without floor?
+- [[PLAYER]] in the center, can not move... only look around with plans of using a phone's gyroscope
+- Scary [[EVENT]]s spawn randomly around the player
+- Events possibly can spawn below and above
