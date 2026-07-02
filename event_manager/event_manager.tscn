@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ni72mwg35vjh"]
+
+[ext_resource type="Script" uid="uid://4vrxh8iheiu" path="res://event_manager/event_manager.gd" id="1_jb666"]
+[ext_resource type="PackedScene" uid="uid://dc5bguuu07x48" path="res://events/slow_approach.tscn" id="2_l2ub2"]
+[ext_resource type="PackedScene" uid="uid://c4k0smjdvwm3v" path="res://events/door_event.tscn" id="3_f28f3"]
+
+[node name="EventManager" type="Node3D" unique_id=953014901]
+script = ExtResource("1_jb666")
+events = Array[PackedScene]([ExtResource("2_l2ub2"), ExtResource("3_f28f3")])
+
+[node name="SpawnerPivot" type="Marker3D" parent="." unique_id=345592144]
+
+[node name="Spawn Marker" type="Marker3D" parent="SpawnerPivot" unique_id=2132253552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+
+[node name="SpawnIntervalTimer" type="Timer" parent="." unique_id=1882455437]
+wait_time = 5.0
+autostart = true

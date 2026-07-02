@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cisf8usduxtj6"]
+
+[ext_resource type="Script" uid="uid://biivweenscd2r" path="res://globals/survival_timer.gd" id="1_ea277"]
+
+[node name="SurvivalTimer" type="Timer" unique_id=1937497969]
+autostart = true
+script = ExtResource("1_ea277")
