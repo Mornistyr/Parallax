@@ -2,7 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://dw4kyom1tsl0u" path="res://floor/floor.tscn" id="1_6xmxd"]
 [ext_resource type="PackedScene" uid="uid://r0bsg8301ql3" path="res://player/player.tscn" id="2_tcf2h"]
-[ext_resource type="PackedScene" uid="uid://dc5bguuu07x48" path="res://events/slow_approach.tscn" id="4_h5o24"]
+[ext_resource type="Script" uid="uid://drlvcvgf33ajb" path="res://world/player_stats_panel.gd" id="5_mmdvd"]
+[ext_resource type="PackedScene" uid="uid://ni72mwg35vjh" path="res://event_manager/event_manager.tscn" id="6_fn3g3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mmdvd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_h5o24"]
+font_size = 64
+outline_size = 2
+outline_color = Color(0.00011382803, 0.00011382803, 0.00011382803, 1)
 
 [node name="World" type="Node3D" unique_id=1926259917]
 
@@ -11,10 +19,45 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1917278118]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9877703, 0)
-
-[node name="SlowApproach" parent="." unique_id=1332809853 instance=ExtResource("4_h5o24")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8706903, 0.23728228, -8.114287)
-speed = 1.0
+visible = false
 
 [node name="Player" parent="." unique_id=605215719 instance=ExtResource("2_tcf2h")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.76515436, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5119736, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=529388969]
+
+[node name="PlayerStatsPanel" type="Panel" parent="CanvasLayer" unique_id=2059105492]
+custom_minimum_size = Vector2(400, 200)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_mmdvd")
+script = ExtResource("5_mmdvd")
+
+[node name="TimeSurvivedLabel" type="Label" parent="CanvasLayer/PlayerStatsPanel" unique_id=868839988]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "9999"
+label_settings = SubResource("LabelSettings_h5o24")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EventManager" parent="." unique_id=953014901 instance=ExtResource("6_fn3g3")]
+
+[node name="SpawnerPivot" parent="EventManager" index="0" unique_id=345592144]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3118174, 0)
+
+[editable path="EventManager"]

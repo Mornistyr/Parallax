@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://c4k0smjdvwm3v"]
+
+[ext_resource type="Script" uid="uid://xnm3mog0aj6k" path="res://events/door_event.gd" id="1_gp7lu"]
+[ext_resource type="PackedScene" uid="uid://cof6aelkvo85s" path="res://blender/door_event_import.glb" id="1_nhhql"]
+[ext_resource type="Material" uid="uid://hspyjuv4kadm" path="res://materials/wood.tres" id="3_aqwrb"]
+[ext_resource type="Material" uid="uid://dja30kjalaope" path="res://materials/metal.tres" id="3_ne0mn"]
+
+[node name="door_event" unique_id=1451184468 instance=ExtResource("1_nhhql")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+script = ExtResource("1_gp7lu")
+
+[node name="DoorFrame" parent="." index="0" unique_id=211040106]
+material_override = ExtResource("3_ne0mn")
+
+[node name="Armature" parent="." index="1" unique_id=206688311]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.672, 4.2, 0.0884)
+
+[node name="Skeleton3D" parent="Armature" index="0" unique_id=2043409075]
+bones/0/rotation = Quaternion(2.2292349e-10, -9.733181e-09, -0.24302517, 0.97002)
+bones/1/rotation = Quaternion(1.110223e-16, -2.7755576e-16, 0, 1)
+
+[node name="Door" parent="Armature/Skeleton3D" index="0" unique_id=1653433738]
+material_override = ExtResource("3_aqwrb")
+
+[node name="Handle_Back" parent="Armature/Skeleton3D" index="1" unique_id=712614058]
+material_override = ExtResource("3_ne0mn")
+
+[node name="Handle_Front" parent="Armature/Skeleton3D" index="2" unique_id=1584453004]
+material_override = ExtResource("3_ne0mn")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="3" unique_id=662270846]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 4.6638727, 0)
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." index="4" unique_id=1268607441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.626162, 0)
+
+[node name="SpookyIntervalTimer" type="Timer" parent="." index="5" unique_id=1140294615]
+wait_time = 7.0
+autostart = true
+
+[node name="LifetimeTimer" type="Timer" parent="." index="6" unique_id=1761152048]
+wait_time = 7.0
+autostart = true

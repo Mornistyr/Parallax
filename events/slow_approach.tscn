@@ -1,15 +1,12 @@
 [gd_scene format=3 uid="uid://dc5bguuu07x48"]
 
 [ext_resource type="Script" uid="uid://dnqvh87iv0w7r" path="res://events/slow_approach.gd" id="1_0dkwp"]
-[ext_resource type="PackedScene" uid="uid://csh7gp1sd0wf7" path="res://First3DAsset.fbx" id="2_wqy60"]
+[ext_resource type="PackedScene" uid="uid://c3tn2ii7ohws4" path="res://blender/SlowApproach.fbx" id="3_nmcvh"]
 [ext_resource type="PackedScene" uid="uid://bib2cphrbtj7f" path="res://components/hurtbox_component.tscn" id="3_wqy60"]
 
 [node name="SlowApproach" type="Node3D" unique_id=1332809853 groups=["events"]]
 script = ExtResource("1_0dkwp")
 speed = 0.1
-
-[node name="First3DAsset" parent="." unique_id=1104715612 instance=ExtResource("2_wqy60")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04927349, 0.03944826, -0.01556778)
 
 [node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." unique_id=807271760]
 transform = Transform3D(0.5243962, 0, 0, 0, 0.57656235, 0, 0, 0, 0.56318474, 0, 1, 0)
@@ -19,3 +16,33 @@ wait_time = 0.5
 autostart = true
 
 [node name="HurtboxComponent" parent="." unique_id=657983360 instance=ExtResource("3_wqy60")]
+transform = Transform3D(1.134, 0, 0, 0, 1.134, 0, 0, 0, 1.134, 0, 0.8163809, 0)
+
+[node name="SlowApproach" parent="." unique_id=62681904 instance=ExtResource("3_nmcvh")]
+transform = Transform3D(-0.35, 0, -3.059797e-08, 0, 0.35, 0, 3.059797e-08, 0, -0.35, 0, -0.5492491, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1510829874]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5878579, 0.17779607)
+light_color = Color(0.5460295, 0, 0.14469492, 1)
+light_size = 1.505
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="." unique_id=2131313291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.77330625, 1.466804, -0.3873096)
+light_color = Color(0.5460295, 0, 0.14469492, 1)
+light_energy = 0.25
+light_size = 1.505
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="." unique_id=508225820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.84694386, 1.466804, -0.32720855)
+light_color = Color(0.5460295, 0, 0.14469492, 1)
+light_energy = 0.25
+light_size = 1.505
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=550084127]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1649973, -0.7268084)
+light_energy = 0.1
+light_size = 0.1
+
+[node name="LifetimeTimer" type="Timer" parent="." unique_id=1731458473]
+wait_time = 30.0
+autostart = true

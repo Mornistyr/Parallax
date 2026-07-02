@@ -19,9 +19,12 @@ config/icon="res://icon.svg"
 
 LookEvents="*uid://p0ltrhfbe6ro"
 GameEvents="*uid://cbegh8llenhcs"
+SurvivalTimer="*uid://cisf8usduxtj6"
 
 [display]
 
+window/size/viewport_width=1080
+window/size/viewport_height=2400
 window/size/resizable=false
 window/stretch/mode="canvas_items"
 window/handheld/orientation=1
